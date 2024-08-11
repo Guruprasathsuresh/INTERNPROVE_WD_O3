@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #882091, #d6336c); /* Gradient from teal to orange */
+  height: 200vh;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(40, end), blink-caret;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+
+
+
+
+
+/* ////........Navbar.......//// */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.menu-items {
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.menu-items a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+.navbar .logo {
+  order: 1;
+  color: #f0f0e6;
+  font-size: 2rem;
+}
+/* ////........Home Content........//// */
+.home-content .name {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2fbfe;
+  width: 100%;
+  text-align: center;
+}
+
+.home-content .name h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.home-content .name p {
+  color: #f1cf4a;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.angle-down-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  border: 3px solid #eff4f6;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.angle-down-icon a {
+  text-decoration: none;
+  color: #f3f8fa;
+  padding: 1rem;
+}
+
+/* Hover Animation for Headings */
+h1:hover, h2:hover {
+  animation: textHover 0.5s forwards;
+}
+
+@keyframes textHover {
+  0% { color: #f0f0e6; }
+  100% { color: #11090e; }
+}
+
+/* Button Animation */
+button {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #f0f0e6;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ////........About Me........//// */
+
+.about-me {
+  background: linear-gradient(135deg, #882091, #d6336c);
+  padding: 6rem 0;
+}
+
+.about-me .about-heading {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-content img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.about-content p {
+  font-size: 20px;
+  color: #ffffff;
+  padding: 0 2.3rem;
+  text-align: center;
+  font-weight:600;
+  margin-top: auto;
+}
+
+.skills {
+  padding: 10px;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.Bold {
+  text-align: center; 
+  font-size: large;/* Aligns text to center, change as needed */
+}
+.Bold h1, .Bold h2, .Bold h3, .Bold h4, .Bold h5, .Bold h6 {
+  /* Adds space above and below each heading */
+  font-weight: bold; /* Makes text bold */
+}
+.right-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-content .left-content {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.about-content .right-content {
+  flex-basis: 45%;
+}
+
+.navbar.solid {
+  background: linear-gradient(135deg, #07374a, #092b39);
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.navbar-brand {
+  display: none;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+.work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(135deg, #25b79f, #56c1a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(135deg, #25b79f, #56c1a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+}
+
+/* ////.....Portfolio......///// */
+.portfolio {
+  background: linear-gradient(135deg, #882091, #d6336c);
+  padding: 6rem 0;
+}
+
+.proj-heading h1 {
+  text-align: center;
+  color: #f1f4f6;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+.proj-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-1 img {
+  height: 350px;
+  width: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 10px -10px rgba(255, 255, 255, 0.31);
+  margin-right: 1.7rem;
+}
+
+.proj-1 .proj1-details {
+  width: 32rem;
+}
+
+.proj-1 .proj1-details i {
+  font-size: 1.5rem;
+  color: #dfd6d6;
+}
+
+.proj-1 .proj1-details h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.proj-1 .proj1-details p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.proj-1 .proj1-details button {
+  background: hwb(206 15% 43% / 0.8);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 150px;
+  border: none;
+  border-bottom: 2px solid #07374a;
+}
+
+.proj-1 .proj1-details button a {
+  text-decoration: none;
+  color: #f9f9f9;
+  font-size: 1.1rem;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.proj-1 .proj1-details button .fas {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+
+.proj-1 .proj1-details button:hover {
+  background: #07374a;
+}
+
+.proj-1 .proj1-details button:hover a,
+.proj-1 .proj1-details button:hover .fas {
+  color: #f0f0e6;
+}
+
+.more-work {
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.more-work p {
+  font-size: 1.6rem;
+  color: #07374a;
+  font-weight: 500;
+}
+
+.more-work a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.3rem;
+}
+
+.more-work a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+/* ////......Contact......///// */
+.contact {
+  background: linear-gradient(135deg, #882091, #d6336c);
+  position: relative;
+  height: 92vh;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contact-content h2 {
+  font-size: 3.5rem;
+  font-weight:bold;
+  color: #fffdfd; /* Slightly lighter dark grey for better brightness */
+  padding-bottom: 0.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-content .mail {
+  color: #e2a7e2; /* Brighter grey for better visibility */
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.contact-content .links {
+  color: #d6f9f6; /* Brighter teal for a more vibrant look */
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 2rem;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #ffffff; /* Match the link color with .links */
+  padding: 0.5rem;
+  transition: color 0.3s ease-in-out;
+  font-weight:bold;
+}
+
+.contact-content a:hover {
+  color: #86dee1; /* Brighter darker teal for hover effect */
+}
+
+
+/* ////......Media query......//// */
+/* Mobile First Styles */
+html {
+  font-size: 60%;
+}
+
+.about-content .left-content,
+.about-content .right-content {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.skills, .contact-content {
+  width: 100%;
+}
+
+.skills-bar .bar .progress-line {
+  width: 100%;
+}
+
+.work-arrow {
+  display: none;
+}
+
+.right-content h1, .left-content h1 {
+  margin-top: 3.2rem;
+  text-align: center;
+}
+
+.proj-1, .proj-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.proj-1 img, .proj-2 img {
+  width: 290px;
+  margin-bottom: 0.5rem;
+}
+
+.work-arrow-2 a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #25b79f;
+  display: block;
+  text-align: center;
+}
+
+/* Tablet Styles */
+@media (min-width: 501px) {
+  html {
+    font-size: 65%;
+  }
+
+  .proj-1 img, .proj-2 img {
+    height: 240px;
+  }
+}
+
+/* Small Desktop Styles */
+@media (min-width: 769px) {
+  html {
+    font-size: 70%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Landscape Styles */
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+}
